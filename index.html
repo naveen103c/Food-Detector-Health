@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT API UI with Image Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Food Image</h1>
+
+        <!-- Input form for checking food is healthy -->
+        <form id="textForm">
+            <label>Enter Food Name:</label>
+            <input type="text" id="foodName" placeholder="Enter food name" />
+            <button type="submit">Check Food Health</button>
+        </form>
+
+        <!-- Form for uploading food images -->
+        <form id="imageForm">
+            <label for="imageInput">Food Health Detector:</label>
+            <input type="file" id="imageInput"  accept="image/*" required />
+            <button type="submit">Check if Healthy</button>
+        </form>
+
+        <!-- Container to display responses -->
+        <div id="response-container" style="display:none;">
+            <h2>Response:</h2>
+            <p id="response"></p>
+        </div>
+    </div>
+
+    <script  type="module" src="index.js"></script>
+</body>
+</html>
